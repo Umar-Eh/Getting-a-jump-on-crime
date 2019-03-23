@@ -6,7 +6,7 @@ represented by grids which have to jumped across utilizing the minimum number of
 **To run this program:** <br>
 Clone the repository and run the crimefighting.py file.<br><br>
 
-** To do:**<br>
+**To do:**<br>
 1. Update readme.
 2. Refactor code for simplicity.
 3. Add a graphical interface to the solution.
