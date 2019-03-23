@@ -285,26 +285,5 @@ def main():
                 print()
         print("Algorithm took ", round(elapsedTime, 4), " milli-seconds.")
 
-        t = turtle.Turtle()
-        w = turtle.Screen()
-        t.penup()
-        t.setposition(-200,200)
-        for i in range(gridArea[0]):
-                for j in range(gridArea[1]):
-                        for k in range(4):
-                                t.pendown()
-                                t.forward(width)
-                                t.right(90)
-                        t.penup()
-                        t.forward(width)
-                t.penup()
-                t.forward(-1*width*gridArea[1])
-                t.right(90)
-                t.forward(width)
-                t.left(90)
-        
-        w.exitonclick()
-
-
 # Main function that runs the program
 main()
