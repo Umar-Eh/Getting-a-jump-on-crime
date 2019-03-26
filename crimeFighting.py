@@ -1,7 +1,5 @@
 import math
 import time
-import matplotlib.pyplot as plt
-import turtle
 
 # Checks if the edge is jumped over
 def checkEdge(edge, dx, dy, currentNode, parentNode):
