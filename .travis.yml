@@ -4,3 +4,4 @@ python:
 
 script:
   - python crimeFighting.py
+  - 4 4 100 50 1 1
