@@ -231,10 +231,15 @@ def main():
         buildingHeights = []
         treeArray = []
         tooHigh = []
-
+        temp = []
         print("Enter the six integers for dx, dy, w, v, lx, ly:")
-        inputVariables = list(map(int, input().split()))    # inputVariables contains the list of input numbers
-
+        while True:
+                try:
+                        temp.append(raw_input())
+                        #inputVariables = list(map(int, raw_input().split()))    # inputVariables contains the list of input numbers
+                except(EOFError):
+                        break
+        inputVariables = list(map(int, temp[0].split()))
         startingCoords = (inputVariables[-2], inputVariables[-1])  # extracting the starting point
         gridArea = (inputVariables[1], inputVariables[0])     # extracting the total grid area
 
@@ -258,7 +263,8 @@ def main():
         buildingHeights.append([0,0,0,0,0])
         print("Enter the building heights: ")
         for i in range (inputVariables[1]):
-                inputList = list(map(int, input().split()))
+                #inputList = list(map(int, raw_input().split()))
+                inputList = list(map(int, temp[i + 1].split()))
                 inputList.insert(0, 0)
                 buildingHeights.append(inputList)
 
